@@ -1,0 +1,223 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f1c40f;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #0cee0f;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    color: red;
+}
+
+/* Main Section */
+.main {
+    background-image: url("image1/pasta1.jpg");
+    background-size: cover;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainText h1 span {
+    color: #ffea04;
+    
+}
+
+.order-btn {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Shop Items */
+.shops {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.shops h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #27ae60;
+}
+
+/* Cart Section */
+#cart {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    margin: 20px;
+}
+
+.cart-items {
+    padding: 10px;
+}
+#cart:hover{
+    background-color: #cae66e;
+}
+
+.checkout-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* About Section */
+.about {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    margin: 20px;
+    border-radius: 10px;
+}
+.about:hover {
+    background-color: #e3ea5ee8;
+}
+
+.about h2 {
+    color: #2c3e50;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    margin: 20px;
+    border-radius: 10px;
+}
+.contact:hover {
+    background-color: #3df040;
+}
+
+.contact h2 {
+    color: #2c3e50;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .main {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .mainText h1 {
+        font-size: 24px;
+    }
+}
